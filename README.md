@@ -1,7 +1,5 @@
 <h1 align="center">Hi 👋, I'm Kulasekaran</h1>
-<h3 align="center">Mechatronics Engineer who's good at Programming / 3D Modelling</h3>
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=kulasekaran-148&label=Profile%20views&color=0e75b6&style=flat" alt="kulasekaran-148" /> </p>
+<h3 align="center">Mechatronics Engineer with interest in Software, Web and 3D Design</h3>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=kulasekaran-148" alt="kulasekaran-148" /></a> </p>
 
