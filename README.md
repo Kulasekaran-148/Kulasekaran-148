@@ -7,7 +7,7 @@
 
 - 👨‍💻 All of my projects are available at [https://kulasekaran-148.github.io/MyWebsite/](https://kulasekaran-148.github.io/MyWebsite/)
 
-- 💬 Ask me about **C, Python, SolidWorks**
+- 💬 Ask me about **C, C++, Java, Python, SolidWorks, Keyshot, Photoshop**
 
 - 📫 How to reach me **kulasekaranslrk@gmail.com**
 
