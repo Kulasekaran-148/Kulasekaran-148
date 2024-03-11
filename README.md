@@ -3,13 +3,13 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=kulasekaran-148" alt="kulasekaran-148" /></a> </p>
 
-- 🌱 I’m currently learning **Full Stack Webdevelopment**
+- 🌱 I’m currently working as a **Senior Embedded Firmware Engineer** at Qmax Systems Pvt. Ltd., Chennai.
 
 - 👨‍💻 All of my projects are available at [https://kulasekaran-148.github.io/MyWebsite/](https://kulasekaran-148.github.io/MyWebsite/)
 
-- 💬 Ask me about **C, C++, Java, Python, SolidWorks, Keyshot, Photoshop**
+- 💬 Ask me about **C | Python | Espressif | NRF | Linux | BLE Mesh**
 
-- 📫 How to reach me **kulasekaranslrk@gmail.com**
+- 📫 How to reach me **kulasekaran@qmaxsys.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
