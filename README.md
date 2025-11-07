@@ -3,7 +3,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=kulasekaran-148" alt="kulasekaran-148" /></a> </p>
 
-- 🌱 I’m currently working as a **Embedded Firmware Developer** at Qmax Systems Pvt. Ltd., Chennai.
+- 🌱 I’m currently working as a **Project Engineer** at E-ConSystems, Chennai.
 
 - 📫 How to reach me **kulasekaranslrk@gmail.com**
 
