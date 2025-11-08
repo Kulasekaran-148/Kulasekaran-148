@@ -79,10 +79,8 @@
 
 ---
 
-## ⚡ Fun Fact of the Day
-<!-- FUNFACT:START -->
-Did you know? The first computer bug was an actual moth found inside a Harvard Mark II computer.
-<!-- FUNFACT:END -->
+### 🌟 Fun Fact of the Day
+<!-- FUN_FACT_PLACEHOLDER -->
 
 ---
 
