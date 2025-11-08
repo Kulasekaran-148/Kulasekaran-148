@@ -9,15 +9,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Fetch Fun Fact
+        id: fact
         run: |
-          FACT=$(curl -s https://uselessfacts.jsph.pl/random.json?language=en | jq -r '.text')
-          echo "Fun fact: $FACT"
-          sed -i "s|<!-- FUN_FACT_PLACEHOLDER -->|$FACT|g" README.md
-      - name: Commit changes
+          RESPONSE=$(curl -s https://uselessfacts.jsph.pl/random.json?language=en)
+          if echo "$RESPONSE" | jq empty 2>/dev/null; then
+            FACT=$(echo "$RESPONSE" | jq -r '.text')
+          else
+            FACT="Could not fetch a fun fact today. Check back tomorrow!"
+          fi
+
+          # Escape special characters for sed
+          FACT_ESCAPED=$(printf '%s\n' "$FACT" | sed -e 's/[\/&]/\\&/g')
+
+          echo "FACT=$FACT_ESCAPED" >> $GITHUB_ENV
+
+      - name: Update README
+        run: |
+          sed -i -E "s|(<!-- FUN_FACT_PLACEHOLDER -->).*|\1\n$FACT|" README.md
+
+      - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "🤖 Updated fun fact of the day"
+          git commit -m "🤖 Updated fun fact of the day" || echo "No changes to commit"
           git push
