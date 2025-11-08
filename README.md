@@ -79,8 +79,10 @@
 
 ---
 
-### ⚡ Fun Fact of the Day
-![Fun Fact](https://readme-jokes.vercel.app/api?theme=tokyonight)
+## ⚡ Fun Fact of the Day
+<!-- FUNFACT:START -->
+Did you know? The first computer bug was an actual moth found inside a Harvard Mark II computer.
+<!-- FUNFACT:END -->
 
 ---
 
