@@ -2,7 +2,7 @@ name: Daily Fun Fact Updater
 
 on:
   schedule:
-    - cron: '0 0 * * *' # once every day at midnight UTC
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -11,32 +11,28 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
       - name: Fetch Fun Fact
         id: fact
         run: |
           echo "Fetching fun fact..."
-          RESPONSE=$(curl -s https://uselessfacts.jsph.pl/random.json?language=en)
+          RESPONSE=$(curl -A "Mozilla/5.0" -s https://uselessfacts.jsph.pl/random.json?language=en)
+          echo "RAW RESPONSE: $RESPONSE"
 
-          # Log response for debugging
-          echo "RESPONSE=$RESPONSE"
-
-          # Check if valid JSON
           if echo "$RESPONSE" | jq empty 2>/dev/null; then
             FACT=$(echo "$RESPONSE" | jq -r '.text')
           else
             FACT="Could not fetch a fun fact today. Check back tomorrow!"
           fi
 
-          # Escape special characters for sed
           FACT_ESCAPED=$(printf '%s\n' "$FACT" | sed -e 's/[\/&]/\\&/g')
-
-          # Export to GitHub environment
           echo "FACT=$FACT_ESCAPED" >> $GITHUB_ENV
 
       - name: Update README
         run: |
-          # Replace old fact instead of appending
-          sed -i -E "s|(<!-- FUN_FACT_PLACEHOLDER -->).*|\1 $FACT|" README.md
+          sed -i "s|<!-- FUN_FACT_PLACEHOLDER -->.*|<!-- FUN_FACT_PLACEHOLDER --> $FACT|" README.md
 
       - name: Commit and Push
         run: |
