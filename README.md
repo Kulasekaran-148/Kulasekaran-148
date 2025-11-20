@@ -80,10 +80,7 @@
 ---
 
 ### 🌟 Fun Fact of the Day
-<!-- FUN_FACT_PLACEHOLDER --> Could not fetch a fun fact today. Check back tomorrow!
-Could not fetch a fun fact today. Check back tomorrow!
-Could not fetch a fun fact today. Check back tomorrow!
-Could not fetch a fun fact today. Check back tomorrow!
+<!-- FUN_FACT_PLACEHOLDER -->
 
 ---
 
